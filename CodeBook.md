@@ -34,15 +34,16 @@ The comments in the script are fairlry self-explanatory
 
 ### Objective 1
 * The initial objective is to create a data set called
-**  vTidyData1 which merges the test and train data sets, adds feature lables and replaces the activity id with the activity description
+  *  vTidyData1 which merges the test and train data sets, adds feature lables and replaces the activity id with the activity description
 
 ### Objective 2
 * the second step creates a data set called
-**  vTidyData2 which extracts only features with mean() or std()
+  * vTidyData2 which extracts only features with mean() or std()
 
 ### Objective 3
 * the final objective creates a data set called
-** vTidyData3 whcih creates an average of each feature in the previous data set, for each subject and activity
-** This is the ouptut data set.
+  * vTidyData3 whcih creates an average of each feature in the previous data set, for each subject and activity
+  * This is the ouptut data set.
 
-### Notes - the feature names seemed relatively clean and meaningful. As such no attempt was made to 'clean' these.
+### Notes 
+ The feature names seemed relatively clean and meaningful. As such no attempt was made to 'clean' these.
