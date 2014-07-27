@@ -1,16 +1,14 @@
 library (reshape2)
-setwd("N:/coursera/GettingandCleaningData/project")
+library(sqldf) #load sqldf package
 
+## set the working directory and relative paths
+
+setwd("N:/coursera/GettingandCleaningData/project")
 dir <- file.path("./UCI HAR Dataset")
 dirtest <- file.path("./UCI HAR Dataset/test")
 dirtrain <- file.path("./UCI HAR Dataset/train")
 
-
-
-
-
 ## Read the raw data files
-
 
 ## read X train and test sets and bind
 ## read feature names and and to combined Test & Train data
@@ -41,8 +39,6 @@ vActivity<-read.table(file.path(dir,'activity_labels.txt'))
 colnames(vActivity)<-c('ActivityId','ActivityType')
 
 ## add descriptive element to vY
-
-library(sqldf) #load sqldf package
 
 vY <- sqldf("select ActivityType from vY join vActivity using(ActivityId)")
 
